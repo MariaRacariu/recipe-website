@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <style>
-    header{
+    .nav-container{
         margin-left:5px;
         margin-right:5px;
     }
-    footer {
+    .footer-container{
         display: flex;
         justify-content: center;
         padding: 5px;
@@ -14,20 +14,20 @@
 </style>
 <body>
     @section('header')
-        <header>
+        <div class="nav-container">
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">Grandmas Recipes</a>
                     <form class="form-inline my-2 my-lg-0">
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Create recipe</button>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">login</button>
+                        <button class="btn btn-outline-primary my-2 my-sm-0">Create recipe</button>
+                        <a class="btn btn-outline-success my-2 my-sm-0" href="login" >login</a>
                     </form>
                 </nav>
-        </header>
+        </div>
     @show
     @section('footer')
-        <footer>
+        <div class="footer-container">
                     <p>© Grandmas recipes all rights reserved</p>
-        </footer>
+        </div>
     @show
     </body>
 </html>
