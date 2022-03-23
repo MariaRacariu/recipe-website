@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <style>
     .nav-container{
         margin-left:5px;
@@ -12,7 +11,6 @@
         color: #fff;
     }
 </style>
-<body>
     @section('header')
         <div class="nav-container">
                 <nav class="navbar navbar-light bg-light">
@@ -29,5 +27,3 @@
                     <p>© Grandmas recipes all rights reserved</p>
         </div>
     @show
-    </body>
-</html>

@@ -10,7 +10,6 @@
 <body>
     @extends('layout')
     @section('header')
-    
     @section('footer')
 </body>
 </html>

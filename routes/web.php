@@ -13,16 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/grandmas recipes', function () {
-    return view('frontpage');
-});
+Route::get('/', function () {return view('frontpage');});
+Route::get('/login', function () {return view('login');});
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::('/projects',[projectcon])->name('projects.index');
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
